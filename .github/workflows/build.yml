@@ -54,7 +54,7 @@ jobs:
         podman tag buildoutput:latest ghcr.io/bigpodsb/alpha-${{ matrix.image_flavor }}:${{ matrix.major_version }}
     - name: tag40aslatest
       shell: bash
-      if: matrix.major_version == 41
+      if: matrix.major_version == 42
       run: |
         podman tag buildoutput:latest ghcr.io/bigpodsb/alpha-${{ matrix.image_flavor }}:latest
     - name: login
