@@ -28,7 +28,7 @@ qemu qemu-user-static qemu-user-binfmt virt-manager libvirt qemu qemu-user-stati
 cockpit-system cockpit-networkmanager cockpit-selinux cockpit-storaged cockpit-podman cockpit-machines cockpit-ws dconf-editor mediawriter vlc ceph-common \
 python3-qt5 hplip-gui flatpak-builder code-insiders lxc-libs rpmdevtools squashfs-tools incus incus-agent kde-connect git-filter-repo git-subtree \
 cockpit cockpit-ostree cockpit-packagekit u2f-server dotnet-sdk-9.0 yaru-theme yaru-gtk2-theme yaru-gtk3-theme yaru-gtk4-theme yaru-icon-theme \
-gnome-shell-theme-yaru yaru-theme yaru-sound-theme
+gnome-shell-theme-yaru yaru-theme yaru-sound-theme atuin
 #COPY --from=edge /usr/lib/opt/microsoft /usr/lib/opt/microsoft
 COPY --from=helm /usr/bin/helm /usr/bin/helm
 COPY --from=kubectl /usr/bin/kubectl /usr/bin/kubectl
