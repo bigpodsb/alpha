@@ -23,8 +23,6 @@ RUN bash /tmp/image-info.sh
 RUN cat /tmp/image-info.sh
 RUN echo $IMAGE_TYPE
 RUN echo $IMAGE_FLAVOR
-RUN rpm-ostree override remove evince-djvu evince-libs evince-previewer evince-thumbnailer gnome-user-docs vim-minimal virtualbox-guest-additions \
-yelp yelp-libs yelp-xsl gnome-user-share
 RUN rpm-ostree install code chromium fish iotop plasma-workspace-wallpapers dbus-x11 htop breeze-cursor-theme direnv cascadia-code-fonts dotnet-sdk-8.0 \
 qemu qemu-user-static qemu-user-binfmt virt-manager libvirt qemu qemu-user-static qemu-user-binfmt edk2-ovmf gnome-console azure-cli cockpit-bridge \
 cockpit-system cockpit-networkmanager cockpit-selinux cockpit-storaged cockpit-podman cockpit-machines cockpit-ws dconf-editor mediawriter vlc ceph-common \
