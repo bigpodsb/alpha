@@ -23,10 +23,10 @@ jobs:
       fail-fast: false
       matrix:
         image_flavor: [main, nvidia]
-        major_version: [44]
-        #exclude: 
-        #  - image_flavor: nvidia
-        #    major_version: 38
+        major_version: [43, 44]
+        exclude: 
+          - image_flavor: nvidia
+            major_version: 44
     steps:
     - name: size available before
       shell: bash
